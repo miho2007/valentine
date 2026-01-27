@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: white;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.cats img {
+  width: 120px;
+  margin: 0 10px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+button {
+  font-size: 28px;
+  padding: 18px 50px;
+  border: none;
+  border-radius: 50px;
+  background: #ff5fa2;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.08);
+}
+
+.signature {
+  margin-top: 30px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 26px;
+  color: #444;
+}
+
+/* Floating hearts */
+.heart {
+  position: absolute;
+  bottom: -50px;
+  opacity: 0.8;
+  animation: floatUp linear infinite;
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(0);
+    opacity: 0.9;
+  }
+  to {
+    transform: translateY(-120vh);
+    opacity: 0;
+  }
+}abody {
+  margin: 0;
+  height: 100vh;
+  background: white;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  padding: 20px; /* mobile breathing room */
+}
+
+.cats img {
+  width: 120px;
+  margin: 0 10px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+button {
+  font-size: 28px;
+  padding: 18px 50px;
+  border: none;
+  border-radius: 50px;
+  background: #ff5fa2;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.08);
+}
+
+.signature {
+  margin-top: 30px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 26px;
+  color: #444;
+}
+
+/* Floating hearts */
+.heart {
+  position: absolute;
+  bottom: -50px;
+  opacity: 0.8;
+  animation: floatUp linear infinite;
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(0);
+    opacity: 0.9;
+  }
+  to {
+    transform: translateY(-120vh);
+    opacity: 0;
+  }
+}
+
+/* ========================= */
+/* 📱 MOBILE RESPONSIVENESS */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .cats img {
+    width: 90px;
+    margin: 0 6px;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+
+  button {
+    font-size: 22px;
+    padding: 14px 36px;
+  }
+
+  .signature {
+    font-size: 22px;
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cats img {
+    width: 75px;
+    margin: 0 4px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  button {
+    font-size: 20px;
+    padding: 12px 32px;
+  }
+
+  .signature {
+    font-size: 20px;
+  }
+}
